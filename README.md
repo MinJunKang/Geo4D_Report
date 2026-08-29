@@ -8,7 +8,8 @@ is overwritten whenever a new audited benchmark result is published.
 
 ## Files
 
-- `index.html`: sortable and filterable aggregate metrics table.
+- `index.html`: sortable and filterable aggregate quality, pose, VBench 1.0,
+  and VBench 2.0 metrics tables.
 - `metrics.json`: sanitized single source of truth consumed by both the public
   page and the private local full report.
 - `.nojekyll`: serves the static files directly through GitHub Pages.

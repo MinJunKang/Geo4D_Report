@@ -20,7 +20,27 @@
       "lpips": 0.38825130991397366,
       "translation_mean": 0.02755195272173134,
       "rotation_mean_deg": 126.91503284575535,
-      "pose_valid": 31
+      "pose_valid": 31,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8799302970569941,
+        "background_consistency": 0.9077005693989415,
+        "aesthetic_quality": 0.4461618450380141,
+        "imaging_quality": 0.5538664908278088,
+        "temporal_style": 0.20837565775840514,
+        "overall_consistency": 0.20837565775840514,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9785555625700786,
+        "motion_smoothness": 0.9920023998998228,
+        "dynamic_degree": 0.9354838709677419
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.8269002106738055,
+        "Human_Identity": 0.765298392022977,
+        "Human_Clothes": 0.8709677419354839,
+        "Multi-View_Consistency": 0.24226666666666663
+      }
     },
     {
       "dataset": "camxtime_eval",
@@ -35,7 +55,27 @@
       "lpips": 0.6152285193243334,
       "translation_mean": 0.02065602883406756,
       "rotation_mean_deg": 123.74378863430995,
-      "pose_valid": 31
+      "pose_valid": 31,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9232185999532381,
+        "background_consistency": 0.9415473199659778,
+        "aesthetic_quality": 0.3955741543923655,
+        "imaging_quality": 0.526651460525288,
+        "temporal_style": 0.1824105651147904,
+        "overall_consistency": 0.1824105651147904,
+        "human_action": 0.0,
+        "temporal_flickering": 0.98933524376678,
+        "motion_smoothness": 0.9919982034823079,
+        "dynamic_degree": 0.3225806451612903
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7012630443747707,
+        "Human_Identity": 0.9304471756392481,
+        "Human_Clothes": 0.9354838709677419,
+        "Multi-View_Consistency": 0.04261586299737628
+      }
     },
     {
       "dataset": "camxtime_eval",
@@ -58,7 +98,27 @@
       "lpips": 0.33841718396832865,
       "translation_mean": 0.01680535897685205,
       "rotation_mean_deg": 79.47258142207932,
-      "pose_valid": 31
+      "pose_valid": 31,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8759349942297464,
+        "background_consistency": 0.903875240202873,
+        "aesthetic_quality": 0.445943090223497,
+        "imaging_quality": 0.6637273636152905,
+        "temporal_style": 0.20086488704527578,
+        "overall_consistency": 0.20086488704527578,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9689240644130427,
+        "motion_smoothness": 0.9850750077179146,
+        "dynamic_degree": 0.967741935483871
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.953788186871746,
+        "Human_Identity": 0.7694441530984057,
+        "Human_Clothes": 0.8387096774193549,
+        "Multi-View_Consistency": 0.7404
+      }
     },
     {
       "dataset": "camxtime_eval",
@@ -81,7 +141,27 @@
       "lpips": 0.420785344896778,
       "translation_mean": 0.0193054334150061,
       "rotation_mean_deg": 133.6030750871549,
-      "pose_valid": 31
+      "pose_valid": 31,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8990021619945765,
+        "background_consistency": 0.9009640601373488,
+        "aesthetic_quality": 0.4481149421584222,
+        "imaging_quality": 0.6202640644576338,
+        "temporal_style": 0.1983814835548401,
+        "overall_consistency": 0.1983814835548401,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9777256564427446,
+        "motion_smoothness": 0.9944076549070332,
+        "dynamic_degree": 0.8709677419354839
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9315106285838438,
+        "Human_Identity": 0.8749920430929226,
+        "Human_Clothes": 0.8387096774193549,
+        "Multi-View_Consistency": 0.3458333333333333
+      }
     },
     {
       "dataset": "camxtime_eval",
@@ -112,7 +192,27 @@
       "lpips": 0.6800170586659358,
       "translation_mean": 0.09360573866716046,
       "rotation_mean_deg": 75.62356621029679,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9003042313456535,
+        "background_consistency": 0.9318463134765625,
+        "aesthetic_quality": 0.4240604847669601,
+        "imaging_quality": 0.5985564926288746,
+        "temporal_style": 0.238048754632473,
+        "overall_consistency": 0.238048754632473,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9411519097346887,
+        "motion_smoothness": 0.9646675228609238,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.5505759560732915,
+        "Human_Identity": 0.8841954681676558,
+        "Human_Clothes": 0.8,
+        "Multi-View_Consistency": 0.4141666666666667
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -127,7 +227,26 @@
       "lpips": 0.7867585879105788,
       "translation_mean": 0.11584415710009752,
       "rotation_mean_deg": 105.45489888752566,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.927792939832434,
+        "background_consistency": 0.9450221252441406,
+        "aesthetic_quality": 0.43249239325523375,
+        "imaging_quality": 0.6155910288021889,
+        "temporal_style": 0.20592755526304246,
+        "overall_consistency": 0.20592755526304246,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9848221750236025,
+        "motion_smoothness": 0.9886034799019935,
+        "dynamic_degree": 0.15
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.31906363688792516,
+        "Human_Identity": 0.8873845452792821,
+        "Human_Clothes": 0.95
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -142,7 +261,27 @@
       "lpips": 0.7280745735535255,
       "translation_mean": 0.1368426272045204,
       "rotation_mean_deg": 121.89754940562511,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9035641189385205,
+        "background_consistency": 0.9220738220214844,
+        "aesthetic_quality": 0.4256109207868576,
+        "imaging_quality": 0.6441939293896709,
+        "temporal_style": 0.22848946936428546,
+        "overall_consistency": 0.22848946936428546,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9613215973797965,
+        "motion_smoothness": 0.9783093900485875,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.6492668408654177,
+        "Human_Identity": 0.722950572634117,
+        "Human_Clothes": 0.8,
+        "Multi-View_Consistency": 0.194
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -157,7 +296,27 @@
       "lpips": 0.5681906548830179,
       "translation_mean": 0.032775785048144115,
       "rotation_mean_deg": 54.47887559927453,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9138987501524389,
+        "background_consistency": 0.9311544799804687,
+        "aesthetic_quality": 0.4342974558472633,
+        "imaging_quality": 0.6682991313698854,
+        "temporal_style": 0.26096386164426805,
+        "overall_consistency": 0.26096386164426805,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9324451469907575,
+        "motion_smoothness": 0.959048882313008,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7236563350166942,
+        "Human_Identity": 0.9114864864864864,
+        "Human_Clothes": 0.7894736842105263,
+        "Multi-View_Consistency": 0.334
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -172,7 +331,27 @@
       "lpips": 0.7156834739905137,
       "translation_mean": 0.08375642119857978,
       "rotation_mean_deg": 60.09881957181034,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8854040777124464,
+        "background_consistency": 0.9071882629394531,
+        "aesthetic_quality": 0.4244332656264305,
+        "imaging_quality": 0.619937528586682,
+        "temporal_style": 0.23608325868844987,
+        "overall_consistency": 0.23608325868844987,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9333539695365755,
+        "motion_smoothness": 0.9610227066042597,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7124051644690492,
+        "Human_Identity": 0.9685064935064935,
+        "Human_Clothes": 0.7777777777777778,
+        "Multi-View_Consistency": 0.5733333333333333
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -187,7 +366,27 @@
       "lpips": 0.6891831572239215,
       "translation_mean": 0.05786159640092636,
       "rotation_mean_deg": 32.165866334161656,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8773711397312581,
+        "background_consistency": 0.91130859375,
+        "aesthetic_quality": 0.42001926302909853,
+        "imaging_quality": 0.647546740743849,
+        "temporal_style": 0.24062250703573226,
+        "overall_consistency": 0.24062250703573226,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9242500864290724,
+        "motion_smoothness": 0.9546283026944419,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.6518801488373764,
+        "Human_Identity": 0.7822842698513006,
+        "Human_Clothes": 0.7894736842105263,
+        "Multi-View_Consistency": 0.5276666666666666
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -202,7 +401,26 @@
       "lpips": 0.7501645271594708,
       "translation_mean": 0.05832865883485701,
       "rotation_mean_deg": 58.08637918913373,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8519830093439669,
+        "background_consistency": 0.9220352172851562,
+        "aesthetic_quality": 0.38994595408439636,
+        "imaging_quality": 0.6168320894123597,
+        "temporal_style": 0.23964196145534516,
+        "overall_consistency": 0.23964196145534516,
+        "human_action": 0.0,
+        "temporal_flickering": 0.922559902901743,
+        "motion_smoothness": 0.9102782663699827,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.6048622511704951,
+        "Human_Identity": 0.8686137126531032,
+        "Human_Clothes": 0.75
+      }
     },
     {
       "dataset": "dycheck_eval",
@@ -217,7 +435,27 @@
       "lpips": 0.5009873257233546,
       "translation_mean": 0.029861866852008756,
       "rotation_mean_deg": 40.867980568429466,
-      "pose_valid": 7
+      "pose_valid": 7,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9139936783723533,
+        "background_consistency": 0.9400190734863281,
+        "aesthetic_quality": 0.42376485019922255,
+        "imaging_quality": 0.6716663670480988,
+        "temporal_style": 0.25295071974396705,
+        "overall_consistency": 0.25295071974396705,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9428214498594697,
+        "motion_smoothness": 0.9348144280522037,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.6817220252376379,
+        "Human_Identity": 0.9240506329113924,
+        "Human_Clothes": 0.8,
+        "Multi-View_Consistency": 0.3505833333333333
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -232,7 +470,27 @@
       "lpips": null,
       "translation_mean": 0.5018533852212482,
       "rotation_mean_deg": 128.23347134359906,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8375604295482239,
+        "background_consistency": 0.8899139404296875,
+        "aesthetic_quality": 0.416304071744283,
+        "imaging_quality": 0.5191519591249065,
+        "temporal_style": 0.23460345963637033,
+        "overall_consistency": 0.23460345963637033,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9601512379116482,
+        "motion_smoothness": 0.9859380584916257,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 4,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7896772274282314,
+        "Human_Identity": 0.6276716165918422,
+        "Human_Clothes": 1.0,
+        "Multi-View_Consistency": 1.0
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -247,7 +505,26 @@
       "lpips": null,
       "translation_mean": 0.1023983039260144,
       "rotation_mean_deg": 73.27005415590601,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8731118312726418,
+        "background_consistency": 0.9323577880859375,
+        "aesthetic_quality": 0.36336683233579,
+        "imaging_quality": 0.2255906386434296,
+        "temporal_style": 0.1936779667933782,
+        "overall_consistency": 0.1936779667933782,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9869259641061422,
+        "motion_smoothness": 0.9924510276355022,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7633647798742138,
+        "Human_Identity": 0.9508196721311475,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -262,7 +539,26 @@
       "lpips": null,
       "translation_mean": 0.5049864597030024,
       "rotation_mean_deg": 157.15613814197238,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9030708998441697,
+        "background_consistency": 0.8971303304036459,
+        "aesthetic_quality": 0.4700906574726105,
+        "imaging_quality": 0.5510516504986296,
+        "temporal_style": 0.2683947483698527,
+        "overall_consistency": 0.2683947483698527,
+        "human_action": 0.0,
+        "temporal_flickering": 0.972258382373386,
+        "motion_smoothness": 0.9839770611736949,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.970866263513618,
+        "Human_Identity": 0.6660714285714285,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -277,7 +573,26 @@
       "lpips": null,
       "translation_mean": 0.6024058746591495,
       "rotation_mean_deg": 86.9834792401494,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8155358976994952,
+        "background_consistency": 0.8841562906901042,
+        "aesthetic_quality": 0.45301244656244916,
+        "imaging_quality": 0.6789206191639842,
+        "temporal_style": 0.2284967005252838,
+        "overall_consistency": 0.2284967005252838,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9319618399626289,
+        "motion_smoothness": 0.9687189336271368,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9728435975329099,
+        "Human_Identity": 0.8492063492063492,
+        "Human_Clothes": 0.6666666666666666
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -292,7 +607,26 @@
       "lpips": null,
       "translation_mean": 0.30859214465970747,
       "rotation_mean_deg": 83.09032967878484,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8455892546723286,
+        "background_consistency": 0.8871205647786459,
+        "aesthetic_quality": 0.44940731922785443,
+        "imaging_quality": 0.607317810529544,
+        "temporal_style": 0.29701892534891766,
+        "overall_consistency": 0.29701892534891766,
+        "human_action": 0.0,
+        "temporal_flickering": 0.956148409999274,
+        "motion_smoothness": 0.9845127772246052,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9747474747474748,
+        "Human_Identity": 0.7972972972972973,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -307,7 +641,26 @@
       "lpips": null,
       "translation_mean": 0.15363961634350862,
       "rotation_mean_deg": 69.07178741169503,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8390654218072693,
+        "background_consistency": 0.8855061848958333,
+        "aesthetic_quality": 0.43277959028879803,
+        "imaging_quality": 0.5777838789386514,
+        "temporal_style": 0.2898588478565216,
+        "overall_consistency": 0.2898588478565216,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9504131765926586,
+        "motion_smoothness": 0.9773266766586888,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.917391304347826,
+        "Human_Identity": 0.9076797385620915,
+        "Human_Clothes": 0.6666666666666666
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -322,7 +675,26 @@
       "lpips": null,
       "translation_mean": 0.2557858509976044,
       "rotation_mean_deg": 90.05804019803116,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8439996426304182,
+        "background_consistency": 0.9048441569010417,
+        "aesthetic_quality": 0.47500117619832355,
+        "imaging_quality": 0.5965059065328213,
+        "temporal_style": 0.29536502559979755,
+        "overall_consistency": 0.29536502559979755,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9584971315720502,
+        "motion_smoothness": 0.9576189951034947,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7983539094650206,
+        "Human_Identity": 0.8775195968645016,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "dynpose_eval",
@@ -337,7 +709,26 @@
       "lpips": null,
       "translation_mean": 0.1104651258128686,
       "rotation_mean_deg": 73.29661451148314,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8774044506251812,
+        "background_consistency": 0.9106343587239584,
+        "aesthetic_quality": 0.4403918385505676,
+        "imaging_quality": 0.6244679096206227,
+        "temporal_style": 0.28400222460428876,
+        "overall_consistency": 0.28400222460428876,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9598216031891069,
+        "motion_smoothness": 0.9547916307158992,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.8175954592363261,
+        "Human_Identity": 0.25757575757575757,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -352,7 +743,26 @@
       "lpips": null,
       "translation_mean": 0.1317856591203792,
       "rotation_mean_deg": 115.87820182626444,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9763848995169003,
+        "background_consistency": 0.9428375244140625,
+        "aesthetic_quality": 0.4769355356693268,
+        "imaging_quality": 0.7139190939130116,
+        "temporal_style": 0.2534395356973012,
+        "overall_consistency": 0.2534395356973012,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9800727819305619,
+        "motion_smoothness": 0.9945056378331693,
+        "dynamic_degree": 0.6666666666666666
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.8259587020648967,
+        "Human_Identity": 0.975,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -367,7 +777,26 @@
       "lpips": null,
       "translation_mean": 0.010874661251950619,
       "rotation_mean_deg": 63.7789159590103,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9351817198097706,
+        "background_consistency": 0.9610483805338542,
+        "aesthetic_quality": 0.4222015142440796,
+        "imaging_quality": 0.32712816018626517,
+        "temporal_style": 0.20891110599040985,
+        "overall_consistency": 0.20891110599040985,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9851071993509928,
+        "motion_smoothness": 0.9944026824182308,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.7129629629629629,
+        "Human_Identity": 0.974025974025974,
+        "Human_Clothes": 0.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -382,7 +811,25 @@
       "lpips": null,
       "translation_mean": 0.06097318570191217,
       "rotation_mean_deg": 105.26580394883278,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9288760501891374,
+        "background_consistency": 0.9012054443359375,
+        "aesthetic_quality": 0.46793530384699505,
+        "imaging_quality": 0.7014588294009613,
+        "temporal_style": 0.25497065981229144,
+        "overall_consistency": 0.25497065981229144,
+        "human_action": 0.0,
+        "temporal_flickering": 0.957220303778555,
+        "motion_smoothness": 0.9765245359623328,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 2,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9243353783231084,
+        "Human_Clothes": 0.5
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -397,7 +844,26 @@
       "lpips": null,
       "translation_mean": 0.07881830350924941,
       "rotation_mean_deg": 112.66684673694486,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8826170633236567,
+        "background_consistency": 0.914068603515625,
+        "aesthetic_quality": 0.4816426634788513,
+        "imaging_quality": 0.7196959290681063,
+        "temporal_style": 0.25844357411066693,
+        "overall_consistency": 0.25844357411066693,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9253697139764924,
+        "motion_smoothness": 0.9646753086256092,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9396551724137931,
+        "Human_Identity": 0.9625,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -412,7 +878,26 @@
       "lpips": null,
       "translation_mean": 0.046485098117461494,
       "rotation_mean_deg": 123.86452379892762,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9592767254759867,
+        "background_consistency": 0.9211069742838541,
+        "aesthetic_quality": 0.4814118544260661,
+        "imaging_quality": 0.762624205915035,
+        "temporal_style": 0.25286142031351727,
+        "overall_consistency": 0.25286142031351727,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9613887824264227,
+        "motion_smoothness": 0.9870637580313688,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9573170731707318,
+        "Human_Identity": 0.9286309127248501,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -427,7 +912,26 @@
       "lpips": null,
       "translation_mean": 0.06072371011035441,
       "rotation_mean_deg": 81.29665068208915,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9234921537339688,
+        "background_consistency": 0.9121134440104167,
+        "aesthetic_quality": 0.48295427362124127,
+        "imaging_quality": 0.7597058130586098,
+        "temporal_style": 0.2587667206923167,
+        "overall_consistency": 0.2587667206923167,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9362549875296798,
+        "motion_smoothness": 0.9779907361855221,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9903100775193798,
+        "Human_Identity": 0.8767123287671232,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -442,7 +946,25 @@
       "lpips": null,
       "translation_mean": 0.06459248486648746,
       "rotation_mean_deg": 133.14278590505714,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9027369935065508,
+        "background_consistency": 0.9088368733723958,
+        "aesthetic_quality": 0.46826061606407166,
+        "imaging_quality": 0.7236424450030542,
+        "temporal_style": 0.2458474487066269,
+        "overall_consistency": 0.2458474487066269,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9532816032958187,
+        "motion_smoothness": 0.9540537485248729,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 2,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.6791979949874687,
+        "Human_Clothes": 0.5
+      }
     },
     {
       "dataset": "spatialvid_eval",
@@ -457,7 +979,26 @@
       "lpips": null,
       "translation_mean": 0.01253629138156036,
       "rotation_mean_deg": 50.19188259852638,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9100511054197947,
+        "background_consistency": 0.9374114990234375,
+        "aesthetic_quality": 0.4855639338493347,
+        "imaging_quality": 0.7659734834270712,
+        "temporal_style": 0.25541285673777264,
+        "overall_consistency": 0.25541285673777264,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9404777975643382,
+        "motion_smoothness": 0.9331841256467864,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.99375,
+        "Human_Identity": 0.8710526315789473,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -472,7 +1013,26 @@
       "lpips": null,
       "translation_mean": 0.058607548212182364,
       "rotation_mean_deg": 170.46257372853756,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8797493951084713,
+        "background_consistency": 0.914910888671875,
+        "aesthetic_quality": 0.5100645919640859,
+        "imaging_quality": 0.5879554387473275,
+        "temporal_style": 0.21332640449206033,
+        "overall_consistency": 0.21332640449206033,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9732238326976502,
+        "motion_smoothness": 0.9922030541349819,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9447965150972669,
+        "Human_Identity": 0.6511627906976745,
+        "Human_Clothes": 0.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -487,7 +1047,26 @@
       "lpips": null,
       "translation_mean": 0.3555280791969528,
       "rotation_mean_deg": 164.6048621934277,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.8474835092822711,
+        "background_consistency": 0.9300608317057292,
+        "aesthetic_quality": 0.3487216035525004,
+        "imaging_quality": 0.2136370401029234,
+        "temporal_style": 0.1024921362598737,
+        "overall_consistency": 0.1024921362598737,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9916583252888099,
+        "motion_smoothness": 0.9932941654359394,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 1.0,
+        "Human_Clothes": 1.0,
+        "Multi-View_Consistency": 0.014166666666666666
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -502,7 +1081,26 @@
       "lpips": null,
       "translation_mean": 0.2998035501161928,
       "rotation_mean_deg": 108.24305239821388,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9533902852485577,
+        "background_consistency": 0.9432220458984375,
+        "aesthetic_quality": 0.5665110349655151,
+        "imaging_quality": 0.6753846652811937,
+        "temporal_style": 0.22915798425674438,
+        "overall_consistency": 0.22915798425674438,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9810518663693099,
+        "motion_smoothness": 0.9899923230654886,
+        "dynamic_degree": 0.6666666666666666
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9925680240771451,
+        "Human_Identity": 0.8225806451612904,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -517,7 +1115,25 @@
       "lpips": null,
       "translation_mean": 0.23440286917048783,
       "rotation_mean_deg": 64.91723927890702,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.7975545913601915,
+        "background_consistency": 0.8521458943684895,
+        "aesthetic_quality": 0.5152406295140585,
+        "imaging_quality": 0.660101988521623,
+        "temporal_style": 0.22249671320120493,
+        "overall_consistency": 0.22249671320120493,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9458753511017445,
+        "motion_smoothness": 0.9605373271253613,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 2,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.8849083115534032,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -532,7 +1148,25 @@
       "lpips": null,
       "translation_mean": 0.08408924303938514,
       "rotation_mean_deg": 71.6296479265611,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9469469321270784,
+        "background_consistency": 0.9235453287760417,
+        "aesthetic_quality": 0.538416306177775,
+        "imaging_quality": 0.579259190343535,
+        "temporal_style": 0.21565431356430054,
+        "overall_consistency": 0.21565431356430054,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9811060092028449,
+        "motion_smoothness": 0.9944865271089517,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 2,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9663298448213641,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -547,7 +1181,26 @@
       "lpips": null,
       "translation_mean": 0.07329921440171017,
       "rotation_mean_deg": 140.7722079666015,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9255772986759742,
+        "background_consistency": 0.9119771321614584,
+        "aesthetic_quality": 0.5272235870361328,
+        "imaging_quality": 0.5899240517321929,
+        "temporal_style": 0.21252445379892984,
+        "overall_consistency": 0.21252445379892984,
+        "human_action": 0.0,
+        "temporal_flickering": 0.976695962045707,
+        "motion_smoothness": 0.993160970652172,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9624877624579558,
+        "Human_Identity": 0.7948717948717948,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -562,7 +1215,26 @@
       "lpips": null,
       "translation_mean": 0.1524629942448157,
       "rotation_mean_deg": 141.2031120762449,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9090600288162629,
+        "background_consistency": 0.9205698649088542,
+        "aesthetic_quality": 0.5172578692436218,
+        "imaging_quality": 0.6059371995337216,
+        "temporal_style": 0.2109521875778834,
+        "overall_consistency": 0.2109521875778834,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9735519889133428,
+        "motion_smoothness": 0.9764570876037825,
+        "dynamic_degree": 1.0
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.919087983300991,
+        "Human_Identity": 0.49056603773584906,
+        "Human_Clothes": 1.0
+      }
     },
     {
       "dataset": "vista4d_eval",
@@ -577,7 +1249,26 @@
       "lpips": null,
       "translation_mean": 0.08846255484358127,
       "rotation_mean_deg": 87.44205159601842,
-      "pose_valid": 3
+      "pose_valid": 3,
+      "vbench1_dimensions_ok": 10,
+      "vbench1_scores": {
+        "subject_consistency": 0.9382687211036682,
+        "background_consistency": 0.9269022623697917,
+        "aesthetic_quality": 0.4867106278737386,
+        "imaging_quality": 0.6553640503746001,
+        "temporal_style": 0.17104661464691162,
+        "overall_consistency": 0.17104661464691162,
+        "human_action": 0.0,
+        "temporal_flickering": 0.9875320073046715,
+        "motion_smoothness": 0.987884582161524,
+        "dynamic_degree": 0.6666666666666666
+      },
+      "vbench2_dimensions_ok": 3,
+      "vbench2_scores": {
+        "Human_Anatomy": 0.9530988274706867,
+        "Human_Identity": 0.33962264150943394,
+        "Human_Clothes": 1.0
+      }
     }
   ]
 }
