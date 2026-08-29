@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geo4D Benchmark Metrics</title>
+<style>
+:root{--bg:#07100f;--panel:#101b19;--line:#263a36;--text:#eef7f4;--muted:#9eb3ad;--green:#65e6ae;--mint:#b9f7df;--red:#ff9b9b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% -10%,#1f5545 0,transparent 34%),var(--bg);color:var(--text);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Noto Sans KR",sans-serif}
+.wrap{width:min(1460px,calc(100% - 36px));margin:auto}.hero{padding:58px 0 28px}.eyebrow{letter-spacing:.17em;text-transform:uppercase;color:var(--green);font-weight:750;font-size:12px}.hero h1{font-size:clamp(34px,5vw,64px);line-height:1.04;letter-spacing:-.05em;margin:12px 0}.lead{color:#c1d2cd;max-width:850px;font-size:16px}.status{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #315349;background:#11251f;color:#c9e8dd;border-radius:999px;padding:6px 10px}.pill.ok{color:#8dffcc;background:#0e3b2d}.pill.error{color:var(--red);border-color:#693d3d;background:#321818}
+main{padding:20px 0 60px}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:0 0 14px}.toolbar select{appearance:none;background:#12211e;color:var(--text);border:1px solid #315047;border-radius:9px;padding:9px 11px}.toolbar input{accent-color:var(--green)}.count{margin-left:auto;color:var(--muted)}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#0d1715}.metrics{border-collapse:collapse;width:100%;min-width:1160px;font-variant-numeric:tabular-nums}.metrics th{position:sticky;top:0;background:#172622;color:#c7dad4;font-size:11px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer}.metrics th,.metrics td{padding:11px;border-bottom:1px solid #20342f;text-align:right;white-space:nowrap}.metrics th:first-child,.metrics th:nth-child(2),.metrics td:first-child,.metrics td:nth-child(2){text-align:left}.metrics tbody tr:hover{background:#14241f}.metrics tr.na{color:#657670}.method{color:var(--mint);font-weight:700}.venue{margin-left:5px;color:#9eb3ad;font-size:.76em}.best{color:#85ffc8;font-weight:750;background:#123126;box-shadow:inset 0 0 0 1px #2a604d}.dash{color:#60716c}.note{color:var(--muted);font-size:12px;margin:12px 2px}.errorbox{display:none;margin-bottom:14px;border:1px solid #693d3d;background:#321818;color:#ffd0d0;padding:12px;border-radius:9px}footer{border-top:1px solid var(--line);padding:22px 0 42px;color:var(--muted)}
+@media(max-width:650px){.wrap{width:min(100% - 20px,1460px)}.hero{padding-top:34px}.count{width:100%;margin-left:0}}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+ <div class="eyebrow">Geo4D benchmark · aggregate metrics</div>
+ <h1>방법론별 종합 지표</h1>
+ <p class="lead">공개 가능한 aggregate 수치만 제공합니다. 영상, case 경로, 실행 로그와 서버 정보는 포함하지 않습니다.</p>
+ <div class="status"><span class="pill ok" id="loadState">Loading metrics…</span><span class="pill" id="updatedAt">Updated —</span><span class="pill" id="scope">Scope —</span></div>
+</header>
+<main class="wrap">
+ <div class="errorbox" id="errorBox"></div>
+ <div class="toolbar"><select id="dataset"></select><select id="method"></select><label><input id="applicable" type="checkbox" checked> 적용 결과만</label><span class="count" id="count"></span></div>
+ <div class="tablewrap"><table class="metrics"><thead><tr><th data-key="dataset">Dataset</th><th data-key="method">Method</th><th data-key="fid">FID ↓</th><th data-key="fvd">FVD ↓</th><th data-key="psnr">PSNR ↑</th><th data-key="ssim">SSIM ↑</th><th data-key="lpips">LPIPS ↓</th><th data-key="translation_mean">Sim(3) t ↓</th><th data-key="rotation_mean_deg">R deg ↓</th><th data-key="pose_valid">Pose</th></tr></thead><tbody id="rows"></tbody></table></div>
+ <p class="note">FID/FVD/LPIPS/translation/rotation은 낮을수록, PSNR/SSIM은 높을수록 좋습니다. 데이터셋별 BEST는 굵은 글씨와 녹색 음영으로 표시합니다. —는 0이 아니라 정의되지 않았거나 적용 불가능한 값입니다.</p>
+</main>
+<footer><div class="wrap">Geo4D Benchmark · aggregate metrics only · schema <span id="schema">—</span></div></footer>
+<script>
+const pretty={camxtime_eval:'Cam×Time',dycheck_eval:'DyCheck',dynpose_eval:'DynPose',spatialvid_eval:'SpatialVid',vista4d_eval:'Vista4D'};
+const methodNames={bullettime:'BulletTime',c4g:'C4G',neoverse:'NeoVerse',spacetimepilot:'SpaceTimePilot',gen3c:'GEN3C',recammaster:'ReCamMaster',vista4d:'Vista4D',trajectorycrafter:'TrajectoryCrafter'};
+const venues={bullettime:'CVPR 26',c4g:'Arxiv 26',neoverse:'CVPR 26',spacetimepilot:'CVPR 26',gen3c:'CVPR 25',recammaster:'ICCV 25',vista4d:'CVPR 26',trajectorycrafter:'ICCV 25'};
+const lower=new Set(['fid','fvd','lpips','translation_mean','rotation_mean_deg']);
+const metricKeys=['fid','fvd','psnr','ssim','lpips','translation_mean','rotation_mean_deg'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=(x,n=2)=>Number.isFinite(x)?Number(x).toFixed(n):'<span class="dash">—</span>';
+const methodHTML=m=>`${esc(methodNames[m]||m)}${venues[m]?` <span class="venue">[${esc(venues[m])}]</span>`:''}`;
+let groups=[],sortKey='dataset',sortDir=1,best={};
+const dataset=document.getElementById('dataset'),method=document.getElementById('method'),applicable=document.getElementById('applicable'),rows=document.getElementById('rows'),count=document.getElementById('count');
+function fill(el,values,label,format=x=>x){el.innerHTML=`<option value="">${label}</option>`+values.map(x=>`<option value="${esc(x)}">${esc(format(x))}</option>`).join('')}
+function computeBest(){best={};groups.filter(x=>x.applicable).forEach(x=>metricKeys.forEach(k=>{const v=x[k],id=`${x.dataset}:${k}`;if(!Number.isFinite(v))return;best[id]=id in best?(lower.has(k)?Math.min(best[id],v):Math.max(best[id],v)):v}))}
+function cell(x,k,n=2){const good=x.applicable&&Number.isFinite(x[k])&&x[k]===best[`${x.dataset}:${k}`];return `<td class="${good?'best':''}">${fmt(x[k],n)}</td>`}
+function render(){let out=groups.filter(x=>(!dataset.value||x.dataset===dataset.value)&&(!method.value||x.method===method.value)&&(!applicable.checked||x.applicable));out.sort((a,b)=>{let x=a[sortKey],y=b[sortKey];if(x==null)x=sortDir>0?Infinity:-Infinity;if(y==null)y=sortDir>0?Infinity:-Infinity;return(typeof x==='string'?x.localeCompare(y):x-y)*sortDir});count.textContent=`${out.length}개 그룹`;rows.innerHTML=out.map(x=>`<tr class="${x.applicable?'':'na'}"><td>${esc(pretty[x.dataset]||x.dataset)}</td><td class="method">${methodHTML(x.method)}</td>${cell(x,'fid')}${cell(x,'fvd')}${cell(x,'psnr',3)}${cell(x,'ssim',4)}${cell(x,'lpips',4)}${cell(x,'translation_mean',4)}${cell(x,'rotation_mean_deg',2)}<td>${x.applicable?`${x.pose_valid}/${x.expected}`:'N/A'}</td></tr>`).join('')}
+document.querySelectorAll('th').forEach(th=>th.onclick=()=>{const k=th.dataset.key;sortDir=sortKey===k?-sortDir:(lower.has(k)?1:-1);sortKey=k;render()});[dataset,method,applicable].forEach(x=>x.onchange=render);
+async function load(){try{const response=await fetch(`metrics.json?v=${Date.now()}`,{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(data.schema_version!=='1.0'||!Array.isArray(data.groups))throw new Error('unsupported metrics schema');groups=data.groups;computeBest();fill(dataset,[...new Set(groups.map(x=>x.dataset))].sort(),'전체 데이터셋',x=>pretty[x]||x);fill(method,[...new Set(groups.map(x=>x.method))].sort(),'전체 방법론',x=>`${methodNames[x]||x}${venues[x]?` [${venues[x]}]`:''}`);document.getElementById('loadState').textContent=`Loaded ${groups.length} groups`;document.getElementById('updatedAt').textContent=`Updated ${data.generated_at.replace('T',' ').replace('+00:00',' UTC')}`;document.getElementById('scope').textContent=data.selection;document.getElementById('schema').textContent=data.schema_version;render()}catch(error){document.getElementById('loadState').textContent='Load failed';document.getElementById('loadState').className='pill error';const box=document.getElementById('errorBox');box.style.display='block';box.textContent=`metrics.json을 불러오지 못했습니다: ${error.message}`}}
+load();
+</script>
+</body></html>
